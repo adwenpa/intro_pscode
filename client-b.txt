@@ -2,3 +2,46 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+There are x aisles, each y units deep
+2 walkways at y-coordinates 0 and y + 1
+need to be in walkway to change aisles.
+
+// inputs
+
+finalX
+finalY
+currentX
+currentY 
+
+foundLocation = False
+
+// functions:
+
+isEqual(A, B)
+    return (A == B)
+
+moveForwardorBack(A, B)
+    return (A - B) 
+
+count = 0
+while !foundLocation
+    if isEqual(finalX, currentX)
+        if isEqual(finalY, currentY)
+            foundLocation = True
+            break
+        else
+            currentY = currentY + moveForwardorBack(finalY, currentY)
+    else
+        currentX = currentX + moveForwardorBack(finalX, currentX)
+    count += 1
+    if count > 10
+        break
+
+// output
+
+if foundLocation
+    print("Location is(currentX, currentY), Congratulations!")
+else
+    print("Location not found")
+   
+      

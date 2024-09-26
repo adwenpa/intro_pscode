@@ -2,3 +2,32 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+// The computer chooses a randomly generated integer from 1 and 10 
+
+
+// input
+guess
+num = randint(1, 10)
+
+// the player has 3 chances to guess num
+
+guessed = False
+
+i = 0
+
+while i < 3:
+    guess = player guesses an integer between 1 and 10
+    if num == guess
+        guessed = True
+        break
+    i = i + 1
+
+
+// output
+
+if guessed
+    print("Congratulations you win!")
+else
+    print("You lose")
+
+
